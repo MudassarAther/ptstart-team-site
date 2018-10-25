@@ -1,0 +1,81 @@
+/**
+ * @author Dejan
+ * @since  Sep 19, 2018
+ */
+
+ @less: "../..";
+ @import "@{less}/_variables.less";
+ @import "@{less}/_mixins.less";
+
+a.add-tribe-link {
+	text-decoration: none;
+}
+
+.tribe-cover-img {
+  width: 30px;
+  height: 30px;
+}
+
+.tribe-description {
+  .limit-line(@lines: 3);
+}
+
+.tribes-header {
+  margin-top: 20px;
+
+	h2 {
+		margin: 0;
+		padding: 0;
+		color: rgba(0,0,0,0.87);
+    font-family: "Assistant";
+    font-size: 82px;
+		float:left;
+		width: 50%;
+	}
+
+	p {
+		color: #585858;
+		font-family: "Open Sans";
+		font-size: 16px;
+		float: right;
+		width: 50%;
+	}
+}
+
+.tribe-filter {
+	clear: both;
+
+  .grp-filter-topic, .grp-filter-location, .label-filter, .btn-filter-location {
+  	float: left;
+  }
+
+  .btn-filter-topic {
+  	box-sizing: border-box;
+    border: 3px solid #84C7BC;
+  	border-radius: 19px;
+
+  	color: #84C7BC;;
+  	font-family: Lato;
+  	font-size: 16px;
+  	font-weight: bold;
+  }
+
+  .dropdown-menu {
+    width: 200px;
+		height: 100px;
+		overflow: auto;
+	}
+
+  .label-filter {
+  	padding-top: 12px;
+  }
+
+  .btn-filter-location {
+  	color: #84C7BC;
+    background-color: #FFF;
+  	font-family: "Open Sans";
+  	font-size: 18px;
+  	font-weight: 600;
+  	padding-top: 8px;
+  }
+}

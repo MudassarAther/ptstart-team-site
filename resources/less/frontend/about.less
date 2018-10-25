@@ -1,0 +1,44 @@
+/**
+ * @author Dejan
+ * @since  Sep 21, 2018
+ */
+
+@less: "../";
+@import "@{less}/_variables.less";
+@import "@{less}/_mixins.less";
+
+.about-main {
+  background-color: #FFF;
+  padding-bottom: 300px;
+
+  h1 {
+    padding-top: 60px;
+  }
+
+  h2 {
+    padding-top: 45px;
+  }
+
+  h3 {
+    padding-top: 30px;
+  }
+
+  li {
+    list-style-type: circle;
+  }
+
+  #members .owl-item {
+    div {
+      padding:5px;
+      
+      img{
+        display: block;
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+    }
+  }
+}

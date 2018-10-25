@@ -1,0 +1,115 @@
+/**
+ * @author Dejan
+ * @since  Oct 16, 2018
+ */
+
+ @less: "../../..";
+ @import "@{less}/_variables.less";
+ @import "@{less}/_mixins.less";
+
+.tribe-list {
+  clear: both;
+}
+
+.tribe-item {
+ 	background-color: #FFFFFF;
+
+  padding: 20px;
+ 	margin-bottom: 50px;
+
+  .tribe-image {
+   	position: relative;
+    display: inline-block;
+
+    img {
+      height: 229px;
+      width: 229px;
+      object-fit: cover;
+      border-radius: 100%;
+      box-shadow: 0 2px 3px 0 rgba(90,97,105,0.11), 0 4px 8px 0 rgba(90,97,105,0.11), 0 15px 22px 0 rgba(90,97,105,0.11), 0 7px 35px 0 rgba(90,97,105,0.11);
+    }
+
+   	.mark {
+      position: absolute;
+      right: -20%;
+
+      border-radius: 100%;
+   		display: inline-block;
+
+   		box-sizing: border-box;
+   		height: 122px;
+   		width: 122px;
+   		background-color: #F47721;
+   		box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
+
+   		color: #FFF;
+   		font-family: Lato;
+   		font-size: 16px;
+   		font-weight: bold;
+
+      text-align: center;
+
+      line-height: 122px;
+
+      span {
+
+       display: inline-block;
+
+       vertical-align: middle;
+
+       line-height: normal;
+
+      }
+  	}
+  }
+
+  .tribe-infos-box {
+   	div {
+   		color: #ED4869;
+   		font-family: "Open Sans";
+   		font-size: 12px;
+   		font-weight: 600;
+   	}
+
+   	h3 {
+      height: 3.6em; // lines 2
+      color: #24292E;
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 28px;
+      /* bottom border line */
+      border-bottom-color: #979797;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      box-sizing: border-box;
+
+      padding-bottom: 50px;
+
+   		a {
+   			margin: 0;
+   			padding: 0;
+   			color: #24292E;
+        font-size: 28px;
+   			font-family: Lato;
+   			font-weight: bold;
+   		}
+   	}
+
+   	p {
+   		color: #656565;
+      font-family: Roboto;
+      font-size: 16px;
+   		height: 100px;
+      text-align: left;
+
+   		/* limit text lines to 3 */
+   		.limit-line(@lines: 3);
+   	}
+
+    .tribe-location {
+      text-align: left;
+      color: #696969;
+      font-size: 14px;
+    }
+  }
+}
